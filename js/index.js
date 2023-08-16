@@ -14,12 +14,14 @@ document.getElementById("eye").addEventListener("click", function () {
   }
 });
 
-document.getElementById("login").addEventListener("click", function () { 
+document.getElementById("login").addEventListener("click", function () {
   const userName = getInputValue("username");
   const password = getInputValue("password");
-  if (userName === 'nafisa' && password === '1234') {
-    location.assign("http://127.0.0.1:5500/dashboard.html");
+  if (userName === "nafisa" && password === "1234") {
+    location.assign(
+      "https://naimuddin94.github.io/Basic-js-bank/dashboard.html"
+    );
   } else {
-    alert('Please enter valid user name and password');
+    alert("Please enter valid user name and password");
   }
-})
+});
